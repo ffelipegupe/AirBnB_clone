@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """FileStorage class module"""
-
 import json
 from models.base_model import BaseModel
 from models.user import User
@@ -30,13 +29,14 @@ class FileStorage:
         dicobj = {}
         for key in self.__objects.keys():
             dicobj[key] = self.__objects[key].to_dict()
-        with open(self.__file_path, "w") as f:
+        with open(self.__file_path, 'w') as f:
             json.dump(dicobj, f)
 
     def reload(self):
         """ Deserializes the JSON file to __objects """
         try:
-            with open(FileStorage.__file_path) as f:
+            objdic = {}
+            with open(FileStorage.__file_path, 'r') as f:
                 objdic = json.load(f)
                 for key, value in objdic.items():
                     self.__objects[key] = eval(value['__class__'])(value)
