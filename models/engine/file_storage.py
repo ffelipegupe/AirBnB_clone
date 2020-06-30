@@ -36,7 +36,7 @@ class FileStorage:
         """ Deserializes the JSON file to __objects """
         try:
             objdic = {}
-            with open(FileStorage.__file_path, 'r') as f:
+            with open(self.__file_path, 'r') as f:
                 objdic = json.load(f)
                 for key, value in objdic.items():
                     self.__objects[key] = eval(value['__class__'])(value)
