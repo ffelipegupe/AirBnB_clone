@@ -41,4 +41,4 @@ class FileStorage:
                 for key, obj in objdic.items():
                     self.__objects[key] = eval(obj['__class__'])(obj)
         except FileNotFoundError:
-            return
+            pass
