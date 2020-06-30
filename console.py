@@ -33,6 +33,7 @@ class HBNBCommand(cmd.Cmd):
         """Empty line does not execute anything
         """
         pass
+
     def do_EOF(self, arg):
         """Quit command to exit the program
         """
