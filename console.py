@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Console module """
 import cmd
 import sys
 from models import storage
@@ -11,6 +12,7 @@ from models.review import Review
 
 
 class HBNBCommand(cmd.Cmd):
+    """ Command Line Interpreter module """
     prompt = "(hbnb) "
     __names = {
         "BaseModel",
@@ -31,7 +33,10 @@ class HBNBCommand(cmd.Cmd):
         """Empty line does not execute anything
         """
         pass
-    do_EOF = do_quit
+    def do_EOF(self, arg):
+        """Quit command to exit the program
+        """
+        return True
 
     def do_create(self, arg):
         """Usage: create <class>.
