@@ -40,6 +40,12 @@ class HBNBCommand(cmd.Cmd):
             n_id = pars[0]
             n_li = n_id + " " + b[0]
             self.do_show(n_li)
+        elif a[0] == "update":
+            b = (a[1].split(")"))
+            c = b[0].split(", ")
+            n_id = pars[0]
+            n_li = n_id + " " + c[0] + " " + c[1] + " " + c[2]
+            self.do_update(n_li)
 
     def do_quit(self, arg):
         """Quit command to exit the program
