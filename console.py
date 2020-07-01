@@ -25,6 +25,22 @@ class HBNBCommand(cmd.Cmd):
         "Review"
     }
 
+    def default(self, arg):
+        pars = list(map(str, arg.split(".")))
+        a = pars[1].split("(")
+        if pars[1] == "all()":
+            self.do_all(pars[0])
+        elif a[0] == "show":
+            b = (a[1].split(")"))
+            n_id = pars[0]
+            n_li = n_id + " " + b[0]
+            self.do_show(n_li)
+        elif a[0] == "destroy":
+            b = (a[1].split(")"))
+            n_id = pars[0]
+            n_li = n_id + " " + b[0]
+            self.do_show(n_li)
+
     def do_quit(self, arg):
         """Quit command to exit the program
         """
