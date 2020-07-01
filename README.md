@@ -27,8 +27,14 @@ The console will be a tool to validate this storage engine.
 # How to use the console
 | Commands | Description |
 | ------ | ------ |
-| help or ? | lists the commands of the console | 
-| ? / help <command> | displays a brief description of the <command>
+| help or ? | Lists the commands of the console | 
+| ? *command* / help *command* | Displays a brief description of the *command*
+| quit | Exits the program |
+| create *class* | Creates a new instance of *class*, returns the id of the newly created instance |
+| show *class* id | Prints the string representation of an instance based on the *class* name and id |
+| destroy *class* id | Deletes an instance based on the class name and id (save the change into the JSON file) |
+| all/ all *class* | Prints all string representation of all instances based or not on the *class* name |
+| update *class* id *attribute name* "attribute value" | Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file) |
 1. To **start** the console, execute the file where the console is located(console.py)
 
 2. 
