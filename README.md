@@ -52,18 +52,23 @@ The console will be a tool to validate this storage engine.
 ![N|Solid](https://i.imgur.com/fu7zg8N.png)
 
 - ` show User <id>`:
+
 ![N|Solid](https://i.imgur.com/zD0tu6j.png)
 
 - `destroy Place `:
+
 ![N|Solid](https://i.imgur.com/MUCPACG.png)
 
 - `all `:
+
 ![N|Solid](https://i.imgur.com/gSZJt7e.png)
 
 - `all State `:
+
 ![N|Solid](https://i.imgur.com/e5Qz8Rj.png)
 
 - `update Review <id> stars "five" `:
+
 ![N|Solid](https://i.imgur.com/hCeOkxa.png)
 
 - `quit `:
