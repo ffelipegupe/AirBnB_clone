@@ -17,12 +17,12 @@ class FileStorage:
 
     def all(self):
         """ Return __objects dictionary """
-        return self.__objects
+        return FileStorage.__objects
 
     def new(self, obj):
         """ Sets in __objects the obj with key <obj class name>.id """
-        keyobj = obj.__class__.__name__
-        self.__objects["{}.{}".format(keyobj, obj.id)] = obj
+        keyobj = "{}.{}".format(obj.__class__.__name__, obj.id)
+        FileStorage.__objects[keyobj] = obj
 
     def save(self):
         """  Serializes __objects to the JSON file (path: __file_path) """
