@@ -33,8 +33,35 @@ The console will be a tool to validate this storage engine.
 | create *class* | Creates a new instance of *class*, returns the id of the newly created instance |
 | show *class* id | Prints the string representation of an instance based on the *class* name and id |
 | destroy *class* id | Deletes an instance based on the class name and id (save the change into the JSON file) |
-| all/ all *class* | Prints all string representation of all instances based or not on the *class* name |
-| update *class* id *attribute name* "attribute value" | Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file) |
-1. To **start** the console, execute the file where the console is located(console.py)
+| all / all *class* | Prints all string representation of all instances based or not on the *class* name |
+| update *class* id *attribute-name* "attribute value" | Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file) |
+- To **start** the console, execute the file where the console is located(console.py). Our console has the title `(hbnb)`:
+![N|Solid](https://i.imgur.com/lCijCMK.png)
 
-2. 
+### Examples:
+- `help `:
+![N|Solid](https://i.imgur.com/geNNE8x.png)
+
+- `? destroy `:
+![N|Solid](https://i.imgur.com/Gadpvja.png)
+
+- `create BaseModel `:
+![N|Solid](https://i.imgur.com/fu7zg8N.png)
+
+- ` show User <id>`:
+![N|Solid](https://i.imgur.com/zD0tu6j.png)
+
+- `destroy Place `:
+![N|Solid](https://i.imgur.com/MUCPACG.png)
+
+- `all `:
+![N|Solid](https://i.imgur.com/gSZJt7e.png)
+
+- `all State `:
+![N|Solid](https://i.imgur.com/e5Qz8Rj.png)
+
+- `update Review id stars "five" `:
+![N|Solid](https://i.imgur.com/hCeOkxa.png)
+
+- `quit `:
+![N|Solid](https://i.imgur.com/lCijCMK.png)
