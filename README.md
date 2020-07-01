@@ -76,4 +76,4 @@ To **start** the console, execute the file where the console is located(console.
 
 - `quit `:
 
-![N|Solid](https://i.imgur.com/lCijCMK.png)
+![N|Solid](https://i.imgur.com/hOLHqsV.png)
