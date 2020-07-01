@@ -35,7 +35,8 @@ The console will be a tool to validate this storage engine.
 | destroy *class* id | Deletes an instance based on the class name and id (save the change into the JSON file) |
 | all / all *class* | Prints all string representation of all instances based or not on the *class* name |
 | update *class* id *attribute-name* "attribute value" | Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file) |
-- To **start** the console, execute the file where the console is located(console.py). Our console has the title `(hbnb)`:
+
+To **start** the console, execute the file where the console is located(console.py). Our console has the title `(hbnb)`:
 ![N|Solid](https://i.imgur.com/lCijCMK.png)
 
 ### Examples:
