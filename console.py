@@ -46,6 +46,12 @@ class HBNBCommand(cmd.Cmd):
             n_id = pars[0]
             n_li = n_id + " " + c[0] + " " + c[1] + " " + c[2]
             self.do_update(n_li)
+        elif a[0] == "count":
+            obj_c = 0
+            for obj in storage.all().values():
+                if pars[0] == obj.__class__.__name__:
+                    obj_c += 1
+            print(obj_c)
 
     def do_quit(self, arg):
         """Quit command to exit the program
