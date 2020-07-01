@@ -40,12 +40,15 @@ The console will be a tool to validate this storage engine.
 
 ### Examples:
 - `help `:
+
 ![N|Solid](https://i.imgur.com/geNNE8x.png)
 
 - `? destroy `:
+
 ![N|Solid](https://i.imgur.com/Gadpvja.png)
 
 - `create BaseModel `:
+
 ![N|Solid](https://i.imgur.com/fu7zg8N.png)
 
 - ` show User <id>`:
@@ -60,8 +63,9 @@ The console will be a tool to validate this storage engine.
 - `all State `:
 ![N|Solid](https://i.imgur.com/e5Qz8Rj.png)
 
-- `update Review id stars "five" `:
+- `update Review <id> stars "five" `:
 ![N|Solid](https://i.imgur.com/hCeOkxa.png)
 
 - `quit `:
+
 ![N|Solid](https://i.imgur.com/lCijCMK.png)
