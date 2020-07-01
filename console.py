@@ -39,7 +39,7 @@ class HBNBCommand(cmd.Cmd):
             b = (a[1].split(")"))
             n_id = pars[0]
             n_li = n_id + " " + b[0]
-            self.do_show(n_li)
+            self.do_destroy(n_li)
         elif a[0] == "update":
             b = (a[1].split(")"))
             c = b[0].split(", ")
@@ -118,7 +118,6 @@ class HBNBCommand(cmd.Cmd):
         elif len(args) < 2:
             print("** instance id missing **")
         elif "{}.{}".format(args[0], args[1]) not in sea:
-            print(sea)
             print("** no instance found **")
         else:
             del sea["{}.{}".format(args[0], args[1])]
