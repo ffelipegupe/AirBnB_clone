@@ -1,0 +1,14 @@
+footer{
+    background: white;
+    border-top: 1px solid #CCCCCC;
+    height: 60px; 
+    width: 100%;
+    align-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.feet{
+    text-align: center
+}
