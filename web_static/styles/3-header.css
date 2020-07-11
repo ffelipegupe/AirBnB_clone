@@ -4,4 +4,7 @@ header{
     background: #ffffff url("../images/logo.png") 20px center no-repeat;
     background-repeat: no-repeat;
     border-bottom: 1px solid #CCCCCC;
+    top: 0;
+    left: 0;
+    position: relative;
 }
